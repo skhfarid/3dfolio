@@ -333,7 +333,15 @@ const Works = () => {
               <h2 className="lg:text-[32px] text-[26px] leading-none">
                 {project.name}
               </h2>
-              <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
+              {/* <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" /> */}
+              <Icon
+                icon="lucide:arrow-up-right"
+                className="md:size-6 size-5 cursor-pointer"
+                onClick={(e) => {
+                  e.stopPropagation(); // prevent triggering the modal open
+                  window.open(project.href, "_blank", "noopener,noreferrer");
+                }}
+              />
             </div>
 
             {/* divider */}
