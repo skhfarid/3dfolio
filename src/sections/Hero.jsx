@@ -15,7 +15,7 @@ const Hero = () => {
         title={"Sheikh Farid"}
         text={text}
         textColor="text-black"
-        titleClassName="text-7xl font-bold  whitespace-nowrap inline-block text-black"
+        titleClassName="w-full text-7xl font-bold  whitespace-nowrap inline-block text-black"
       />
       <figure
         className="absolute inset-0 -z-50"
